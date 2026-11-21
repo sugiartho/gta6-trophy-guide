@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trophy Trail — a GTA VI platinum guide</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: checklist, roadmap to the platinum, missables, and a cited guide to each trophy.">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-copy">
+      <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Unofficial fan guide</p>
+      <h1>Trophy Trail</h1>
+      <p class="lede">All 55 official trophies, tracked offline. Tick them off as you earn them, follow the roadmap to the platinum, and read a guide to each trophy in our own words, with the sources its facts come from.</p>
+      <p class="facts" id="headerFacts">55 trophies · 1 platinum · 2 gold · 6 silver · 46 bronze · 0 online · 1 possibly missable</p>
+    </div>
+    <div class="progress-card" id="progressCard" aria-label="Progress"></div>
+  </div>
+  <nav class="tabs" aria-label="Guide sections">
+    <a href="#/checklist" data-tab="checklist">Checklist</a>
+    <a href="#/roadmap" data-tab="roadmap">Roadmap to the platinum</a>
+    <a href="#/missables" data-tab="missables">Missables</a>
+  </nav>
+</header>
+
+<div class="toolbar" id="toolbar">
+  <label class="field search-field">Search
+    <input id="search" type="search" placeholder="Trophy name or word…" autocomplete="off">
+  </label>
+  <label class="field">Kind
+    <select id="kindFilter">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="online">Online</option>
+    </select>
+  </label>
+  <label class="field">Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="field">Status
+    <select id="statusFilter">
+      <option value="all">Earned and not</option>
+      <option value="earned">Earned</option>
+      <option value="missing">Not earned yet</option>
+    </select>
+  </label>
+  <label class="switch-field"><input id="spoilerToggle" type="checkbox" checked> Hide story spoilers</label>
+  <span class="toolbar-spacer"></span>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+</div>
+
+<div class="layout">
+  <main id="view" aria-live="polite"></main>
+  <aside id="detail" aria-label="Trophy guide"></aside>
+</div>
+
+<footer class="colophon">
+  <p>Trophy Trail is an unofficial fan guide. It is not affiliated with Rockstar Games, Take-Two Interactive or Sony Interactive Entertainment, and it shows no Rockstar logo or official artwork. Trophy names, descriptions and grades are the official PlayStation 5 list as published on Exophase and PSNProfiles; the guides are our own words, and each one names its sources. Everything on this page works offline from its own files.</p>
+  <p id="dataNote"></p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
